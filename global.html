@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>goo.gl URL Shortener</title>
+  <script type="text/javascript" charset="utf-8">
+    var getShortUrl = function(url) {
+      var ggl_endpoint = "http://ggl-shortener.appspot.com/?url=" + encodeURIComponent(url),
+          xhr = new XMLHttpRequest(),
+          responseJsonHandler = function(json){
+            if (json.error_message){
+              alert("An error occured: " + json.error_message);
+            } else {
+              prompt('Short link to this page', json.short_url);
+            }
+          };
+      xhr.open("GET", ggl_endpoint);
+      xhr.onload = function() {
+        responseJsonHandler(eval("(" + xhr.responseText + ")"));
+      };
+      xhr.send();
+    };
+    
+    var validateHandler = function(e){
+      if (e.command == 'shorten'){
+        e.target.disabled = !safari.application.activeBrowserWindow.activeTab.url;
+      }
+    };
+    
+    var commandHandler = function(e){
+      if (e.command == "shorten"){
+        getShortUrl(safari.application.activeBrowserWindow.activeTab.url);
+      }
+    };
+    
+    safari.application.addEventListener("validate", validateHandler, false);
+    safari.application.addEventListener("command", commandHandler, false);
+  </script>
+</head>
+<body></body>
+</html>
