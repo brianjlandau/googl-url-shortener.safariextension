@@ -64,5 +64,7 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://github.com/brianjlandau/googl-url-shortener.safariextension/raw/master/updates.plist</string>
 </dict>
 </plist>
