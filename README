@@ -5,7 +5,7 @@ It provides both a Toolbar Item and a context menu item.
 Currently it doesn't auto copy it into the pasteboard as I'm unclear how that can be done with the Safari API yet.
 If someone knows that would be a great contribution.
 
-Download: http://github.com/downloads/brianjlandau/googl-url-shortener.safariextension/googl-url-shortener.safariextz
+Download: http://github.com/downloads/brianjlandau/googl-url-shortener.safariextension/googl-url-shortener-v1.1.safariextz
 
 
 License

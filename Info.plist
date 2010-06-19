@@ -11,9 +11,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.1</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Context Menu Items</key>
@@ -52,6 +52,8 @@
 		<key>Scripts</key>
 		<dict/>
 	</dict>
+	<key>Description</key>
+	<string>Creates a goo.gl short URL for the current page.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -66,5 +68,7 @@
 	</dict>
 	<key>Update Manifest URL</key>
 	<string>http://github.com/brianjlandau/googl-url-shortener.safariextension/raw/master/updates.plist</string>
+	<key>Website</key>
+	<string>http://github.com/brianjlandau/googl-url-shortener.safariextension</string>
 </dict>
 </plist>

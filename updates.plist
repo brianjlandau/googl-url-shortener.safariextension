@@ -10,11 +10,11 @@
         <key>Developer Identifier</key>
         <string>9HKGL9D9L3</string>
         <key>CFBundleVersion</key>
-        <string>1</string>
+        <string>1.1</string>
         <key>CFBundleShortVersionString</key>
-        <string>1.0</string>
+        <string>1.1</string>
         <key>URL</key>
-        <string>http://github.com/downloads/brianjlandau/googl-url-shortener.safariextension/googl-url-shortener.safariextz</string>
+        <string>http://github.com/downloads/brianjlandau/googl-url-shortener.safariextension/googl-url-shortener-v1.1.safariextz</string>
       </dict>
     </array>
   </dict>
